@@ -1,0 +1,65 @@
+
+@charset="utf-8";
+
+/*헤더 작업 시작*/
+#header{position:relative;
+        margin:10px 20px;}
+#header h1{background:url(../images/sp_com.png)no-repeat;
+           text-indent:-9999px;
+           width:70px;
+           height:28px;
+           line-height:38px;}
+.panel{position:absolute;
+       right:20px;
+       top:40%;
+       margin-top:-5px;}
+/*三<-형태 만드는 방법*/
+.panel:before ,.panel span, .panel:after{content:"";
+                                         display:block;
+                                         width:25px;
+                                         height:3px;
+                                         background:#464646;}
+.panel:after{width:17px;
+             background:#242424;}
+.panel span{margin:5px 0;
+            text-indent:-9999px;}
+/*헤더 작업 끝*/
+
+/*푸터 작업 시작*/
+#footer{background:#383F43;
+        color:#fff;
+        text-align: center;
+        font-size:12px;
+        font-weight:bold;}
+.fMenu{padding:0 20px;
+       display:inline-block;
+       font-size:0;
+       height:30px;
+       margin-top:20px;}
+.fMenu li{display:inline-block;
+          font-size:14px;}
+.fMenu li a{color:white;}
+.fMenu li:after{content:"";
+                display:inline-block;
+                width:1px;
+                height:10px;
+                background:#ccc;
+                margin:0 8px;}
+.fMenu li:last-child:after{display:none;}
+.fcs{display:inline-block;
+     padding:10px 0;}
+.footLeft, .footRight{float:left;
+                      height:40px;
+                      line-height:40px;
+                      padding:0 15px;}
+.footLeft{background:#2a3033;
+          margin-right:10px;}
+.footLeft span{padding-right:15px;}
+.footRight{border:0;
+           -webkit-appearance:none;
+           background:#fff url(../images/sp_comcopy.png)no-repeat 95% center;
+           padding-right:30px;}
+.copy{background:#4C5459;
+      line-height:60px;
+      font-size:12px;}
+/*푸터 작업 끝*/
